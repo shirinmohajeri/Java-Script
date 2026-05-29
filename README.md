@@ -118,4 +118,68 @@ Open the browser developer tools:
 * **Cmd + Option + J** (Mac)
 
 Then select the **Console** tab.
+---
+---
+
+## Variables
+
+Variables are used to store data in JavaScript.
+
+### Declaring a Variable
+
+```javascript
+var name;
+```
+
+Here, a variable named `name` is created.
+
+### Assigning a Value
+
+```javascript
+name = "Shirin";
+```
+
+The value `"Shirin"` is stored in the variable `name`.
+
+### Displaying the Value
+
+```javascript
+document.write(name);
+```
+
+Output:
+
+```text
+Shirin
+```
+
+### Complete Example
+
+```javascript
+var name;
+name = "Shirin";
+document.write(name);
+```
+
+### How It Works
+
+1. Create a variable called `name`.
+2. Store the text `"Shirin"` in the variable.
+3. Display the value on the webpage using `document.write()`.
+
+### Modern JavaScript
+
+Instead of `var`, modern JavaScript usually uses `let` or `const`.
+
+```javascript
+let name = "Shirin";
+document.write(name);
+```
+
+or
+
+```javascript
+const name = "Shirin";
+document.write(name);
+```
 
