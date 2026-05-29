@@ -337,4 +337,119 @@ Output:
 3
 ```
 ---
+---
 
+## Variables and Data Types
+
+In JavaScript, variables can store different types of values.
+
+### Example
+
+```html
+<title></title>
+
+<script type="text/javascript">
+    /* declare a variable named number */
+    var number = 100;
+    document.write(number);
+
+    var Name = "shirin";
+    console.log(Name);
+    alert(Name);
+
+    var variable = 300;
+    document.write(variable);
+
+    /* Data types */
+    var name = "Shirin";
+    var age = 35;
+    var x = 3.456;
+    var y = false;
+</script>
+```
+
+### Explanation
+
+```javascript
+var number = 100;
+```
+
+Stores the number `100` in the variable `number`.
+
+```javascript
+document.write(number);
+```
+
+Displays the value of `number` on the HTML page.
+
+```javascript
+var Name = "shirin";
+```
+
+Stores the text `"shirin"` in the variable `Name`.
+
+```javascript
+console.log(Name);
+```
+
+Displays the value of `Name` in the browser console.
+
+```javascript
+alert(Name);
+```
+
+Shows the value of `Name` in an alert popup.
+
+```javascript
+var variable = 300;
+```
+
+Stores the number `300` in the variable `variable`.
+
+```javascript
+document.write(variable);
+```
+
+Displays the value of `variable` on the page.
+
+---
+
+## JavaScript Data Types
+
+### String
+
+A string is text. It must be written inside quotation marks.
+
+```javascript
+var name = "Shirin";
+```
+
+### Number
+
+A number can be an integer or a decimal number.
+
+```javascript
+var age = 35;
+var x = 3.456;
+```
+
+### Boolean
+
+A Boolean value can be only `true` or `false`.
+
+```javascript
+var y = false;
+```
+
+---
+
+## Notes
+
+JavaScript is case-sensitive.
+
+```javascript
+var Name = "shirin";
+var name = "Shirin";
+```
+
+`Name` and `name` are different variables because one starts with a capital letter and the other starts with a lowercase letter.
