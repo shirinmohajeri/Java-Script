@@ -248,6 +248,93 @@ document.write(text);
 document.write("<br>");
 document.write(boolean);
 ```
-
 Although both display `true`, they are different data types.
+---
+---
+
+## Arithmetic Operations
+
+JavaScript can perform mathematical calculations using variables.
+
+### Addition Example
+
+```javascript
+var a = 10;
+var b = 20;
+var result;
+
+result = a + b;
+
+document.write(result);
+```
+
+### Output
+
+```text
+30
+```
+
+### Explanation
+
+```javascript
+var a = 10;
+```
+
+Stores the value `10` in variable `a`.
+
+```javascript
+var b = 20;
+```
+
+Stores the value `20` in variable `b`.
+
+```javascript
+result = a + b;
+```
+
+Adds `a` and `b` together and stores the result in the variable `result`.
+
+```javascript
+document.write(result);
+```
+
+Displays the result on the webpage.
+
+### Other Arithmetic Operators
+
+| Operator | Description         | Example   | Result |
+| -------- | ------------------- | --------- | ------ |
+| `+`      | Addition            | `10 + 20` | `30`   |
+| `-`      | Subtraction         | `20 - 10` | `10`   |
+| `*`      | Multiplication      | `10 * 20` | `200`  |
+| `/`      | Division            | `20 / 10` | `2`    |
+| `%`      | Modulus (Remainder) | `20 % 3`  | `2`    |
+
+### Example
+
+```javascript
+var a = 15;
+var b = 5;
+
+document.write(a + b);
+document.write("<br>");
+
+document.write(a - b);
+document.write("<br>");
+
+document.write(a * b);
+document.write("<br>");
+
+document.write(a / b);
+```
+
+Output:
+
+```text
+20
+10
+75
+3
+```
+---
 
