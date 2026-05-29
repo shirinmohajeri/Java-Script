@@ -66,4 +66,56 @@ Example:
 ```html
 <script src="script.js"></script>
 ```
+---
+
+## Console Output
+
+### `console.log()`
+
+The `console.log()` method is used to print messages to the browser's console.
+
+```javascript
+console.log("Hello this is the output to the console");
+```
+
+### Output
+
+```text
+Hello this is the output to the console
+```
+
+### Why Use `console.log()`?
+
+`console.log()` is useful for:
+
+* Displaying information during program execution
+* Checking variable values
+* Debugging JavaScript code
+* Understanding how your code works
+
+### Example
+
+```javascript
+console.log("Hello World");
+console.log("Learning JavaScript");
+console.log(100);
+```
+
+Output:
+
+```text
+Hello World
+Learning JavaScript
+100
+```
+
+### Viewing the Console
+
+Open the browser developer tools:
+
+* **F12**
+* **Ctrl + Shift + J** (Windows/Linux)
+* **Cmd + Option + J** (Mac)
+
+Then select the **Console** tab.
 
