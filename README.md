@@ -182,4 +182,72 @@ or
 const name = "Shirin";
 document.write(name);
 ```
+---
+
+## String Variables
+
+A variable can store text values (strings).
+
+### Example
+
+```javascript
+var value;
+value = "true or false";
+document.write(value);
+```
+
+### Output
+
+```text
+true or false
+```
+
+### Explanation
+
+```javascript
+var value;
+```
+
+Creates a variable named `value`.
+
+```javascript
+value = "true or false";
+```
+
+Stores the text `"true or false"` inside the variable.
+
+```javascript
+document.write(value);
+```
+
+Displays the value on the webpage.
+
+### Note
+
+Because the value is inside quotation marks (`"`), JavaScript treats it as **text (a string)**, not as a Boolean value.
+
+```javascript
+value = "true";
+```
+
+This is a string.
+
+```javascript
+value = true;
+```
+
+This is a Boolean value.
+
+### Difference
+
+```javascript
+var text = "true";
+var boolean = true;
+
+document.write(text);
+document.write("<br>");
+document.write(boolean);
+```
+
+Although both display `true`, they are different data types.
 
