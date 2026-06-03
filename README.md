@@ -453,3 +453,199 @@ var name = "Shirin";
 ```
 
 `Name` and `name` are different variables because one starts with a capital letter and the other starts with a lowercase letter.
+
+# JavaScript Learning Notes - Functions, Objects, Scope, and Events
+
+## Functions
+
+Functions allow us to group code into reusable blocks.
+
+### Addition Function
+
+```javascript
+function add(x, y) {
+    var z = x + y;
+    return z;
+}
+
+var result = add(300, 200);
+document.write(result);
+
+var result = add(2000, 30);
+document.write(result);
+```
+
+### Function with Return Value
+
+```javascript
+function shirin(y, z, w) {
+    return y + z + w;
+}
+
+var result = shirin(10, 20, 30);
+document.write(result);
+```
+
+### Square Function
+
+```javascript
+function square(x) {
+    var result = x * x;
+    document.write(result);
+}
+
+square(5);
+```
+
+### Display Function
+
+```javascript
+function display() {
+    document.write("Hello Babe");
+}
+
+display();
+```
+
+### Addition of Three Numbers
+
+```javascript
+function addition(a, b, c) {
+    var result = a + b + c;
+    document.write(result);
+}
+
+addition(2, 3, 4);
+```
+
+---
+
+## JavaScript Objects
+
+Objects are used to store related data in key-value pairs.
+
+### Person Object
+
+```javascript
+var person = {
+    name: "shirin",
+    family: "mohajeri",
+    age: 35,
+    Job: "Doctor",
+    car: "BMW"
+};
+
+document.write(person.age);
+document.write(person.Job);
+document.write(person.car);
+document.write(person.name);
+document.write(person.family);
+```
+
+### Car Object
+
+```javascript
+var car = {
+    brand: "BMW",
+    color: "black",
+    year: 2020,
+    state: "stopped"
+};
+
+document.write(car.brand);
+```
+
+### Updating Object Properties
+
+```javascript
+car.color = "white";
+```
+
+The color property changes from `black` to `white`.
+
+---
+
+## Global and Local Variables
+
+### Example
+
+```javascript
+var many1 = 200;
+
+function demo() {
+    var many2 = 100;
+    document.write(many2);
+}
+
+document.write(many1);
+demo();
+```
+
+### Notes
+
+* `many1` is a **global variable** and can be accessed anywhere.
+* `many2` is a **local variable** and can only be accessed inside the `demo()` function.
+
+---
+
+## Events and Buttons
+
+JavaScript can respond to user actions such as button clicks.
+
+### Show Message
+
+```javascript
+function showMessage() {
+    document.write("Hi There");
+}
+```
+
+Button:
+
+```html
+<button onclick="showMessage()">Click Me</button>
+```
+
+### Change Object State
+
+```javascript
+function changeState() {
+    car.state = "running";
+    document.write(car.state);
+}
+```
+
+Button:
+
+```html
+<button onclick="changeState()">Change Car State</button>
+```
+
+### Call Display Function
+
+```html
+<button onclick="display()">Click Here</button>
+```
+
+When the button is clicked, the `display()` function runs and shows the message:
+
+```text
+Hello Babe
+```
+
+---
+
+## Concepts Learned
+
+* Functions
+* Function Parameters
+* Return Values
+* Objects
+* Object Properties
+* Updating Object Properties
+* Global Variables
+* Local Variables
+* Events
+* Button Click Events
+* DOM Output with `document.write()`
+
