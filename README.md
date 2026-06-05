@@ -648,4 +648,185 @@ Hello Babe
 * Events
 * Button Click Events
 * DOM Output with `document.write()`
+  ---
+
+# JavaScript Math Object
+
+JavaScript provides a built-in `Math` object that contains useful mathematical functions.
+
+## Math.pow()
+
+The `Math.pow()` function raises a number to a specified power.
+
+### Syntax
+
+```javascript
+Math.pow(base, exponent);
+```
+
+### Example
+
+```javascript
+document.write(Math.pow(100, 2));
+```
+
+### Calculation
+
+```text
+100² = 100 × 100 = 10000
+```
+
+### Output
+
+```text
+10000
+```
+
+---
+
+## Math.round()
+
+The `Math.round()` function rounds a number to the nearest integer.
+
+### Example
+
+```javascript
+document.write(Math.round(4.1));
+```
+
+### Output
+
+```text
+4
+```
+
+### More Examples
+
+```javascript
+Math.round(4.4); // 4
+Math.round(4.5); // 5
+Math.round(4.9); // 5
+```
+
+---
+
+## Math.sqrt()
+
+The `Math.sqrt()` function returns the square root of a number.
+
+### Syntax
+
+```javascript
+Math.sqrt(number);
+```
+
+### Example
+
+```javascript
+document.write(Math.sqrt(49));
+```
+
+### Calculation
+
+```text
+√49 = 7
+```
+
+### Output
+
+```text
+7
+```
+
+### Incorrect Usage
+
+```javascript
+Math.sqrt(49, 0.5);
+```
+
+`Math.sqrt()` accepts only one parameter, so `0.5` is ignored.
+
+---
+
+## Square Root Using Math.pow()
+
+A square root can also be calculated using `Math.pow()`.
+
+### Example
+
+```javascript
+document.write(Math.pow(49, 0.5));
+```
+
+### Calculation
+
+```text
+49^0.5 = √49 = 7
+```
+
+### Output
+
+```text
+7
+```
+
+---
+
+## Other Useful Math Functions
+
+### Math.floor()
+
+Rounds down to the nearest integer.
+
+```javascript
+Math.floor(4.9);
+```
+
+Output:
+
+```text
+4
+```
+
+### Math.ceil()
+
+Rounds up to the nearest integer.
+
+```javascript
+Math.ceil(4.1);
+```
+
+Output:
+
+```text
+5
+```
+
+### Math.abs()
+
+Returns the absolute (positive) value.
+
+```javascript
+Math.abs(-10);
+```
+
+Output:
+
+```text
+10
+```
+
+---
+
+## Summary
+
+| Function         | Description              | Example           | Output |
+| ---------------- | ------------------------ | ----------------- | ------ |
+| `Math.pow(x, y)` | Power                    | `Math.pow(10,2)`  | `100`  |
+| `Math.sqrt(x)`   | Square Root              | `Math.sqrt(49)`   | `7`    |
+| `Math.round(x)`  | Round to Nearest Integer | `Math.round(4.6)` | `5`    |
+| `Math.floor(x)`  | Round Down               | `Math.floor(4.9)` | `4`    |
+| `Math.ceil(x)`   | Round Up                 | `Math.ceil(4.1)`  | `5`    |
+| `Math.abs(x)`    | Absolute Value           | `Math.abs(-10)`   | `10`   |
+
 
