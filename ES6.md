@@ -516,3 +516,11 @@ student.age = 20;
 
 console.log(student);
 ```
+### output:
+
+```javascript
+{
+  name: 'jim',
+  age: 20
+}
+```
