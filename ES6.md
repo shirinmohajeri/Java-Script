@@ -506,6 +506,7 @@ because we are trying to replace the entire object, and `const` prevents reassig
 ### Example:
 
 ```javascript
+
  const student = {
     name: 'john'
 };
