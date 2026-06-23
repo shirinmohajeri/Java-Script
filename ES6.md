@@ -387,4 +387,119 @@ marks.push(500);  // ✅ Call the method
 
 marks.push = 500; // ❌ Replace the method
 ```
+## Understanding `const` with Objects
+
+When an object is declared using `const`, the variable cannot be reassigned to a different object. However, the properties inside the object can still be modified.
+
+This is because `const` protects the reference to the object, not the contents of the object itself.
+
+In the example below, the object initially contains a property called `name` with the value `"john"`.
+
+When we execute:
+
+```javascript
+student.name = 'jim';
+```
+
+we are not replacing the object. Instead, we are changing the value of the `name` property from `"john"` to `"jim"`.
+
+Since the object itself remains the same object, JavaScript allows this operation even though the variable was declared with `const`.
+
+### Example
+
+```javascript
+const student = {
+    name: 'john'
+};
+
+student.name = 'jim';
+
+console.log(student);
+```
+
+### Output
+
+```javascript
+{
+    name: 'jim'
+}
+```
+
+### Step-by-Step Breakdown
+
+#### Step 1: Create the Object
+
+```javascript
+const student = {
+    name: 'john'
+};
+```
+
+The object looks like this:
+
+```javascript
+{
+    name: 'john'
+}
+```
+
+#### Step 2: Modify the Property
+
+```javascript
+student.name = 'jim';
+```
+
+The `name` property changes from:
+
+```javascript
+{
+    name: 'john'
+}
+```
+
+to:
+
+```javascript
+{
+    name: 'jim'
+}
+```
+
+#### Step 3: Print the Object
+
+```javascript
+console.log(student);
+```
+
+Output:
+
+```javascript
+{
+    name: 'jim'
+}
+```
+
+### Important Note
+
+This is allowed:
+
+```javascript
+student.name = 'jim';
+```
+
+because we are modifying a property of the object.
+
+This is not allowed:
+
+```javascript
+student = {
+    name: 'jim'
+};
+```
+
+because we are trying to replace the entire object, and `const` prevents reassignment.
+
+### Rule to Remember
+
+`const` prevents reassigning the variable, but it does not make objects immutable. You can change the properties inside the object, but you cannot replace the object itself.
 
