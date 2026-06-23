@@ -1,6 +1,4 @@
 # JavaScript First Example
-### Preview
-[!preview]()
 ## Basic HTML with JavaScript
 
 This is a simple example of using JavaScript inside an HTML file.
