@@ -246,3 +246,145 @@ let counter = 0;
 ```
 
 Use `const` by default and use `let` only when the value needs to change.
+
+# Array Method: push()
+
+The `push()` method adds one or more elements to the end of an array.
+
+---
+
+## Syntax
+
+```javascript
+array.push(element1, element2, ...);
+```
+
+### Example
+
+```javascript
+const marks = [200, 300, 400];
+
+marks.push(500);
+
+console.log(marks);
+```
+
+### Output
+
+```javascript
+[200, 300, 400, 500]
+```
+
+---
+
+## Adding Multiple Elements
+
+You can add multiple elements at once.
+
+```javascript
+const marks = [200, 300, 400];
+
+marks.push(500, 600);
+
+console.log(marks);
+```
+
+### Output
+
+```javascript
+[200, 300, 400, 500, 600]
+```
+
+---
+
+## Common Mistake
+
+Incorrect:
+
+```javascript
+const marks = [200, 300, 400];
+
+marks.push = (500, 600);
+
+console.log(marks);
+```
+
+### Why It's Wrong
+
+`push` is a method (function). Using `=` replaces the method instead of calling it.
+
+JavaScript evaluates:
+
+```javascript
+(500, 600)
+```
+
+to:
+
+```javascript
+600
+```
+
+So the code becomes:
+
+```javascript
+marks.push = 600;
+```
+
+Now the `push()` method has been overwritten.
+
+---
+
+## What Happens Next?
+
+```javascript
+marks.push(700);
+```
+
+### Output
+
+```javascript
+TypeError: marks.push is not a function
+```
+
+Because `push` is now a number instead of a function.
+
+---
+
+## Correct Usage
+
+Always use parentheses `()` to call the method:
+
+```javascript
+const marks = [200, 300, 400];
+
+marks.push(500, 600);
+
+console.log(marks);
+```
+
+### Output
+
+```javascript
+[200, 300, 400, 500, 600]
+```
+
+---
+
+## Summary
+
+| Code                      | Result                                     |
+| ------------------------- | ------------------------------------------ |
+| `marks.push(500)`         | Adds `500` to the array                    |
+| `marks.push(500, 600)`    | Adds multiple elements                     |
+| `marks.push = 500`        | Replaces the method (incorrect)            |
+| `marks.push = (500, 600)` | Replaces the method with `600` (incorrect) |
+
+### Rule to Remember
+
+```javascript
+marks.push(500);  // ✅ Call the method
+
+marks.push = 500; // ❌ Replace the method
+```
+
