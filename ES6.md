@@ -503,3 +503,13 @@ because we are trying to replace the entire object, and `const` prevents reassig
 
 `const` prevents reassigning the variable, but it does not make objects immutable. You can change the properties inside the object, but you cannot replace the object itself.
 
+### Example:
+``` const student = {
+    name: 'john'
+};
+
+student.name = 'jim';
+student.age = 20;
+
+console.log(student);
+```
