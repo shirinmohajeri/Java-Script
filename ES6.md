@@ -504,7 +504,9 @@ because we are trying to replace the entire object, and `const` prevents reassig
 `const` prevents reassigning the variable, but it does not make objects immutable. You can change the properties inside the object, but you cannot replace the object itself.
 
 ### Example:
-``` const student = {
+
+```javascript
+ const student = {
     name: 'john'
 };
 
